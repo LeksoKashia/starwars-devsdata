@@ -21,7 +21,6 @@ Welcome to the **Star Wars Character Browser**! This project lets you explore ch
 - Click on a character to open their **Details View**.
 - View essential information like name, gender, height, and more.
 - Explore complex data like **films**, **species**, **starships**, and **vehicles** by clicking the buttons.
-- 
 ---
 
 ## Setup Instructions
