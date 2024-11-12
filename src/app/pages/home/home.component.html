@@ -1,0 +1,19 @@
+<search
+  (searchInputValue)="getSearchValue($event)"
+  [clear]="clearSearch"
+></search>
+
+@if(characters$ | async; as characters){
+<characters-list
+  [characters]="characters"
+  [searchValue]="searchVal"
+  (pageNumber)="paginate($event)"
+></characters-list>
+}@else {
+<div class="flex loader-container">
+  <span class="loader"></span>
+</div>
+
+}
+
+<pagination (pageNumber)="paginate($event)"></pagination>

@@ -1,0 +1,11 @@
+<section class="main">
+  <div class="container">
+    <div class="character-list">
+      @for(character of filteredCharacters; track character){
+      <character [name]="character.name" [url]="character.url"></character>
+      }@empty{
+      <p class="empty">No Characters Found</p>
+      }
+    </div>
+  </div>
+</section>

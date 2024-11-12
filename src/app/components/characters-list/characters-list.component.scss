@@ -1,0 +1,25 @@
+.main {
+  height: 330px;
+  width: 500px;
+  margin: 0 auto;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.character-list {
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.empty {
+  text-align: center;
+  font-size: 18px;
+  color: #f32013;
+  font-weight: 600;
+}

@@ -1,0 +1,71 @@
+<div class="details-container">
+  @if(character$ | async; as character){
+  <h1 class="name">{{ character.name }}</h1>
+  <div class="character-info">
+    <p><strong>Height:</strong> {{ character.height }} cm</p>
+    <p><strong>Mass:</strong> {{ character.mass }} kg</p>
+    <p><strong>Hair Color:</strong> {{ character.hair_color }}</p>
+    <p><strong>Skin Color:</strong> {{ character.skin_color }}</p>
+    <p><strong>Eye Color:</strong> {{ character.eye_color }}</p>
+    <p><strong>Birth Year:</strong> {{ character.birth_year }}</p>
+    <p><strong>Gender:</strong> {{ character.gender }}</p>
+    <p><strong>Created:</strong> {{ character.created | date }}</p>
+    <p><strong>Edited:</strong> {{ character.edited | date }}</p>
+  </div>
+  <h3 class="name complex-data-title">complex data</h3>
+  <div class="flex complex-data-actions">
+    <button
+      class="complex-data-button"
+      (click)="seeComplexData(character, 'films')"
+    >
+      see films
+    </button>
+    <button
+      class="complex-data-button"
+      (click)="seeComplexData(character, 'species')"
+    >
+      see species
+    </button>
+    <button
+      class="complex-data-button"
+      (click)="seeComplexData(character, 'vehicles')"
+    >
+      see vehicles
+    </button>
+    <button
+      class="complex-data-button"
+      (click)="seeComplexData(character, 'starships')"
+    >
+      see Starships
+    </button>
+  </div>
+  @if(type){
+
+  <h1 class="type">{{ type }}</h1>
+  }
+  <div class="complex-data">
+    @if(complexData | async; as complexData){ @for(data of complexData; track
+    data){
+
+    <div class="data">
+      <div *ngFor="let item of data | keyvalue">
+        <p>
+          <strong>{{ item.key }}: </strong> {{ item.value }}
+        </p>
+      </div>
+    </div>
+    }}@else { @if(loader){
+    <div class="flex loader-container">
+      <span class="loader"></span>
+    </div>
+    }@else { @if(type !== ''){
+
+    <p class="error">no {{ type }} found for {{ character.name }}</p>
+    } } }
+  </div>
+  }@else {
+  <div class="flex loader-container">
+    <span class="loader"></span>
+  </div>
+  }
+</div>

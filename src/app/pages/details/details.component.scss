@@ -1,0 +1,98 @@
+.details-container {
+  width: 400px;
+  margin: 100px auto 30px auto;
+  display: flex;
+  flex-direction: column;
+  background: var(--primary-background);
+  padding: 20px;
+  color: white;
+  gap: 5px;
+  border-radius: 8px;
+}
+
+.character-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 24px;
+}
+.name {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.complex-data-title {
+  margin: 10px 0;
+}
+
+.complex-data-actions {
+  gap: 10px;
+}
+
+.complex-data {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.error {
+  color: #f32013;
+}
+
+.complex-data-button {
+  align-items: center;
+  background-color: #06f;
+  border: 2px solid #06f;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  fill: #000;
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  height: 40px;
+  border-radius: 4px;
+  justify-content: center;
+  letter-spacing: -0.8px;
+  line-height: 24px;
+  outline: 0;
+  padding: 0 5px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.complex-data-button:focus {
+  color: #171e29;
+}
+
+.complex-data-button:hover {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.complex-data-button:active {
+  background-color: #3385ff;
+  border-color: #3385ff;
+  fill: #06f;
+}
+
+.data {
+  background-color: #001e28;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: #cccbcb;
+  border-radius: 8px;
+}
+
+.type {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}

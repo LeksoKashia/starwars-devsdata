@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+}
+body {
+  // background-color: black;
+}
+
+:root {
+  --primary-color: #27b654;
+  --primary-background: #001e28;
+  --primary-text-color: white;
+  --primary-background: linear-gradient(97deg, #0a1929 1.27%, #120c1f 75.23%);
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #fff;
+  border-bottom-color: #ff3d00;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
