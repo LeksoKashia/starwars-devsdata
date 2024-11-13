@@ -23,3 +23,24 @@
   color: #f32013;
   font-weight: 600;
 }
+
+@media (max-width: 600px) {
+  .character-list {
+    width: 400px;
+  }
+  .main {
+    width: 400px;
+  }
+}
+
+@media (max-width: 450px) {
+  .character-list {
+    width: 100%;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main {
+    height: unset;
+    width: 70%;
+  }
+}

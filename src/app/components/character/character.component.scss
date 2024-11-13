@@ -12,3 +12,16 @@
   transform: scale(1.1);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
+
+@media (max-width: 600px) {
+  .character-card {
+    width: 150px;
+  }
+}
+
+@media (max-width: 450px) {
+  .character-card {
+    width: 100%;
+    padding: 20px 0;
+  }
+}

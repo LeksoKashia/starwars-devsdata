@@ -96,3 +96,15 @@
   margin-bottom: 10px;
   margin-top: 10px;
 }
+
+@media (max-width: 600px) {
+  .details-container {
+    width: 80%;
+  }
+
+  .complex-data-actions {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 10px;
+  }
+}
