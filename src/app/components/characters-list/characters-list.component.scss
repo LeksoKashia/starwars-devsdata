@@ -14,6 +14,7 @@
   width: 500px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
   gap: 10px;
 }
 
@@ -27,6 +28,7 @@
 @media (max-width: 600px) {
   .character-list {
     width: 400px;
+    justify-items: normal;
   }
   .main {
     width: 400px;

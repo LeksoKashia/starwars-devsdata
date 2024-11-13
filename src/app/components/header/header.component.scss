@@ -1,38 +1,11 @@
 .header {
-  display: flex;
-  justify-content: space-between;
   padding: 15px 17px;
-  align-items: center;
-  color: var(--primary-text-color);
   background: var(--primary-background);
 
   &-top {
-    gap: 15px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-  }
-
-  .site-name {
-    text-decoration: none;
-  }
-
-  .date-time {
-    font-size: 14px;
-  }
-
-  h1 {
-    margin: 0;
-    padding-bottom: 5px;
-    font-weight: 800;
-
-    .croco {
-      color: var(--primary-color);
-    }
-
-    .bet {
-      color: var(--primary-text-color);
-    }
   }
 }

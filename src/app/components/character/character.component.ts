@@ -4,7 +4,7 @@ import { Router, RouterLink } from '@angular/router';
 @Component({
   selector: 'character',
   standalone: true,
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './character.component.html',
   styleUrl: './character.component.scss',
 })
